@@ -1,0 +1,35 @@
+@media (max-width: 900px) {
+    #telaInicial {
+        background-position-x: 70vw;
+    }
+
+    #telaInicial .conteudo {
+        align-items: center;
+
+        text-align: center;
+    }
+
+    #telaInicial header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    #telaInicial main {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1700px) {
+    #telaInicial {
+        background-position-x: 40vw;
+    }
+}
+
+@media (max-heigth: 760px) {
+    #telaInicial {
+        background-position-y: 200px;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/register.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&family=Lato:wght@700&display=swap" rel="stylesheet">
+
+        <title>Ecoleta</title>
+    </head>
+
+    <body>
+        <div id="telaCadastro">
+
+            <header>
+                <img src="assets/logo.svg" alt="Logo da Ecoleta">
+                <a href="#">
+                    <span></span>
+                    Voltar para home
+                </a>
+            </header>
+
+            <form action="">
+                <h1>Cadastro do ponto de coleta</h1>
+
+                <!-- 1º grupo do formulário -->
+                <fieldset>
+                    <!-- Nome do 1º grupo -->
+                    <legend>
+                        <h2>Dados da entidade</h2>
+                    </legend>
+
+                    <!-- Linha 1 -->
+                    <div class="campo">
+                        <label for="name">Nome da entidade</label>
+                        <input type="text" name="name">
+                    </div>
+
+                    <!-- Linha 2 -->
+                    <div class="campoGrupo">
+                        <!-- Linha 2/input A -->
+                        <div class="campo">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" name="endereco">
+                        </div>
+
+                        <!-- Linha 2/input B -->
+                        <div class="campo">
+                            <label for="endereco2">Número/Complemento</label>
+                            <input type="text" name="endereco2">
+                        </div>
+                    </div>
+
+                    <!-- Linha 3 -->
+                    <div class="campoGrupo">
+                        <!-- Linha 3/input A -->
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select name="uf">
+                                <option value="">
+                                    Selecione o estado
+                                </option>
+                            </select>
+
+                            <input type="hidden" name="estado">
+                        </div>
+                        
+                        <!-- Linha 3/input B -->
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <select name="cidade" disabled>
+                                <option value="">
+                                    Selecione a cidade
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+                <button type="submit">
+                    Cadastrar ponto de coleta
+                </button>
+            </form>
+
+        </div>
+
+        <script src="scripts/register.js"></script>
+    </body>
+</html>

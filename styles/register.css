@@ -1,0 +1,121 @@
+#telaCadastro {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#telaCadastro header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+#telaCadastro header a {
+    color: var(--corLinksCabecalho);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#telaCadastro header a span {
+    background-image: url("../assets/arrow-left.svg");
+
+    width: 20px;
+    height: 22px;
+    margin-right: 15px;
+
+    display: flex;
+}
+
+form {
+    background-color: white;
+
+    margin: 80px auto;
+    border-radius: 8px;
+    
+    max-width: 730px;
+    padding: 64px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+
+    border: none;
+}
+
+form legend {
+    margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    margin-bottom: 24px;
+}
+
+form .campoGrupo {
+    display: flex;
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+
+    border: none;
+    border-radius: 8px;
+    padding: 16px 24px;
+
+    font-size: 16px;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+/* Pega o .campo que segue outro .campo, isto é, o 2º */
+form .campoGrupo .campo + .campo {
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+
+    margin-top: 40px;
+
+    background-color: var(--corFundo);
+
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: background-color 400ms;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}

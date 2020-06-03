@@ -1,33 +1,3 @@
-:root {
-    --corLegal: #322153;
-    --corFundo: #34cb79;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-family: Lato, sans-serif;
-}
-
-body {
-    background: #f0f0f5;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* Tirar sublinhado de todos os links */
-a {
-    text-decoration: none;
-}
-
-/* Padronizar todos os cabeçalhos */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--corLegal);
-    font-family: 'Titillium Web', sans-serif;;
-}
-
 #telaInicial {
     background: url("assets/home-background.svg") no-repeat;
     background-position: 35vw bottom;
@@ -56,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 #telaInicial header a {
     display: flex;
 
-    color: var(--corLegal);
+    color: var(--corLinksCabecalho);
     font-weight: 700;
 }
 
@@ -138,28 +108,4 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 
     flex: 1;
-}
-
-@media (max-width: 900px) {
-    #telaInicial {
-        background-position-x: 70vw;
-    }
-
-    #telaInicial .conteudo {
-        align-items: center;
-
-        text-align: center;
-    }
-
-    #telaInicial header a {
-        position: absolute;
-        bottom: 48px;
-        left: 50%;
-
-        transform: translateX(-50%);
-    }
-
-    #telaInicial main {
-        align-items: center;
-    }
 }

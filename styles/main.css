@@ -1,0 +1,30 @@
+:root {
+    --corLinksCabecalho: #322153;
+    --corFundo: #34cb79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Tirar sublinhado de todos os links */
+a {
+    text-decoration: none;
+}
+
+/* Padronizar todos os cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--corLinksCabecalho);
+    font-family: 'Titillium Web', sans-serif;;
+}
